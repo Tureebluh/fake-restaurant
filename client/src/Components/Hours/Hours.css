@@ -1,0 +1,17 @@
+.HoursContainer ul{
+    text-align: justify;
+}
+.HoursContainer hr {
+    background: white;
+    width: 60%;
+    margin: 0 auto;
+}
+.HoursContainer .StoreLocation {
+    margin: 3em auto 0 auto;
+}
+.HoursContainer .GoogleMaps {
+    background: rgb(49, 49, 145);
+    padding: 3em;
+    margin: 5% 0 5% 0;
+    border-radius: 5%;
+}

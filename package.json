@@ -1,34 +1,29 @@
 {
-  "name": "gaglianos",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
-  },
+  "name": "template",
+  "version": "0.0.0",
+  "description": "A template for React apps.",
+  "main": "server.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "client": "cd client && start npm start",
+    "start": "babel-node server.js",
+    "server": "start nodemon --exec babel-node server.js --ignore client/",
+    "dev": "concurrently --kill-others-on-fail",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "author": "Jarek Thomas",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.4.4",
+    "body-parser": "^1.18.3",
+    "express": "^4.15.2",
+    "helmet": "^3.13.0"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.11.0"
+  },
+  "heroku-run-build-script": true
 }

@@ -1,0 +1,26 @@
+.HomeContainer {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 10%;
+    background: url('/spaghetti.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+    min-height: 90vh;
+}
+.HomeContainer p {
+    font-style: italic;
+    font-size: 1.5rem;
+    border-radius: 1em;
+}
+.HomeContainer p>q {
+    color: rgba(245, 245, 245, 0.7);
+}
+
+/* Large Devices */
+@media only screen and (min-width : 700px) {
+    .HomeContainer p {
+        font-size: 2.5rem;
+    }
+    
+}

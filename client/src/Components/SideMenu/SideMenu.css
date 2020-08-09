@@ -1,0 +1,76 @@
+.SideMenu {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 25vw;
+    text-align: center;
+    background-color: rgb(240, 240, 240);
+}
+.SideMenu .List {
+    flex: 1;
+}
+.SideMenu .List .ListItem {
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 5%;
+    color: black;
+}
+.SideMenu .List .ListItemLogo {
+    background-color: inherit;
+    cursor: default;
+}
+.SideMenu .Banner {
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.SideMenu .List .ListItem:hover {
+    background-color: #F7B733;
+}
+.SideMenu .List .Link.active .ListItem {
+    background-color: #F7B733!important;
+}
+.SideMenu .List .Link {
+    text-decoration: none;
+}
+.SideMenu .Divider {
+    height: 2px;
+    width: 70%;
+    margin: 2em auto 0 auto;
+}
+.SideMenu .Footer
+{
+    margin-bottom: 30%;
+}
+
+.SideMenu .Footer .GridSocial {
+    margin: 10% 0;
+}
+.SideMenu .Footer .GridSocial .Facebook {
+    color: rgb(66,103,178);
+}
+.SideMenu .Footer .GridSocial .Twitter {
+    color: #1DA1F2;
+}
+.SideMenu .Footer .GridSocial .Instagram {
+    color: #C13584;
+}
+.SideMenu .Footer .GridSocial svg {
+    height: 2.5em!important;
+    width: auto!important;
+    transition: transform 200ms ease-in-out;
+    color: black;
+}
+.SideMenu .Footer .GridSocial svg:hover {
+    transform: scale(1.2);
+}
+
+/* Desktop */
+@media only screen and (min-width : 700px) {
+    .SideMenu
+    {
+        min-width: 25%;
+        max-width: 35vw;
+    }
+}
